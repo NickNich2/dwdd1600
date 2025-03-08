@@ -1,7 +1,7 @@
 body {
     font-family: "Baskersville", Garamond serif;
     font-size: 16px;
-    font-weight: 300; 
+    font-weight: 300;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -39,7 +39,7 @@ nav a:hover {
 main ul li {
     line-height: 125%;
     margin: .5rem;
-      font-size: .9rem;
+    font-size: .9rem;
 }
 
 section {
@@ -62,7 +62,9 @@ section {
     margin: 10px;
     border-radius: 8px;
 }
-dl1{ background-color: #1abc9c;
+
+dl1 {
+    background-color: #1abc9c;
 }
 
 /* footer stuff */
