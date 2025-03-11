@@ -1,19 +1,23 @@
 body {
-    font-family: "Baskersville", Garamond serif;
+    font-family: 'Libre Baskerville';
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 /* head stuff here*/
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 header {
     background-color: #2c3e50;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #024873;
 }
 
 nav {
@@ -27,8 +31,14 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
+    font-weight: 700;
     margin: 0 15px;
     padding: 10px 20px;
+}
+
+nav li.active a {
+    background-color: #024873;
+    color: #f2b705;
 }
 
 nav a:hover {
@@ -36,11 +46,35 @@ nav a:hover {
 }
 
 /* main stuff*/
+a:link,
+a:active {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
 
 main ul li {
     line-height: 125%;
     margin: .5rem;
     font-size: .9rem;
+}
+
+main h2 {
+    color: #05334f;
+    margin-bottom: .2rem;
+}
+
+main ul {
+    list-style-type: circle;
 }
 
 section {
