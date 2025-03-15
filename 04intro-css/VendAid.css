@@ -40,10 +40,10 @@ nav a {
 
 nav li.active a {
     background-color: #024873;
-    color: #f2b705;
+    color: #111520;
 }
 
-nav a:hover {
+nav li a:hover {
     background-color: #1abc9c;
 }
 
