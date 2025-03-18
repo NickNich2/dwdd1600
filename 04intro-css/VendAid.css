@@ -1,3 +1,5 @@
+/* #page
+height 48px */
 body {
     font-family: 'Libre Baskerville';
     font-size: 16px;
@@ -18,10 +20,11 @@ header {
 header h1 {
     margin: 0;
     color: #024873;
+    font-size: 2rem;
 }
 
 nav {
-    background-color: #34495e;
+    background-color: #557799;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -40,7 +43,7 @@ nav a {
 
 nav li.active a {
     background-color: #024873;
-    color: #111520;
+    color: #e80f0f;
 }
 
 nav li a:hover {
@@ -48,14 +51,14 @@ nav li a:hover {
 }
 
 /* main stuff*/
-a:link,
+
 a:active {
-    color: blue;
+    color: rgb(240, 240, 245);
     text-decoration: none;
 }
 
 a:visited {
-    color: darkblue;
+    color: rgb(163, 163, 197);
     text-decoration: none;
 }
 
