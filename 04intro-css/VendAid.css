@@ -36,8 +36,9 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    height: 48px;
+    line-height: 48px;
     margin: 0 15px;
+    display: block;
     padding: 10px 20px;
 }
 
