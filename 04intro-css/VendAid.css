@@ -26,6 +26,7 @@ header h1 {
 nav {
     background-color: #557799;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 48px;
 }
@@ -94,7 +95,21 @@ section {
     margin: 20px 0;
 }
 
-.flex-container {
+ol {
+    display: table-column;
+    list-style-type: decimal;
+    /* Keeps the numbered list */
+    padding: 0;
+    margin: 0;
+}
+
+ol li {
+    margin-right: 20px;
+    /* Adds space between items */
+}
+
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
