@@ -15,6 +15,11 @@ header {
     text-align: center;
 }
 
+header span {
+    font-size: large;
+    font-weight: 700;
+}
+
 header h1 {
     margin: 0;
     color: #024873;
@@ -22,6 +27,21 @@ header h1 {
 }
 
 /* navigation stuff*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* Aligns items horizontally with space between them */
+    align-items: center;
+    /* Vertically centers the items */
+
+}
+
+.item {
+    background-color: lightblue;
+    /* Just for visual clarity */
+    padding: 20px;
+    margin: 10px;
+}
 
 nav {
     background-color: #557799;
@@ -38,6 +58,9 @@ nav ul {
     display: flex;
 }
 
+nav li {
+    float: left;
+}
 
 nav a {
     color: #fff;
@@ -45,7 +68,7 @@ nav a {
     font-weight: 700;
     line-height: 48px;
     margin: 0 15px;
-    display: block;
+    display: flex;
     padding: 10px 20px;
 }
 
@@ -86,10 +109,16 @@ main h2 {
     margin-bottom: .2rem;
 }
 
+main p{
+    margin: 0;
+}
 main ul {
     list-style-type: circle;
 }
-
+ 
+p{
+   line-height: 48px; 
+}
 section {
     padding: 40px;
     margin: 20px 0;
@@ -126,7 +155,7 @@ ol li {
 }
 
 dl1 {
-    background-color: #1abc9c;
+    background-color: #1c0f57;
 }
 
 /* footer stuff */
