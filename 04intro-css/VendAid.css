@@ -27,7 +27,7 @@ header h1 {
 }
 
 /* navigation stuff*/
-.container {
+.flex-container {
     display: flex;
     justify-content: space-between;
     /* Aligns items horizontally with space between them */
