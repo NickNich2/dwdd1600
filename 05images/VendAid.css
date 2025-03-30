@@ -109,16 +109,18 @@ main h2 {
     margin-bottom: .2rem;
 }
 
-main p{
+main p {
     margin: 0;
 }
+
 main ul {
     list-style-type: circle;
 }
- 
-p{
-   line-height: 48px; 
+
+p {
+    line-height: 48px;
 }
+
 section {
     padding: 40px;
     margin: 20px 0;
@@ -163,10 +165,12 @@ figure.wrapped {
     margin: 0 0 0 2%;
     float: right;
 }
+
 figure.wrapped img {
     width: 100%;
     height: auto;
 }
+
 figure.wrapped figcaption {
     text-align: center;
     font-size: .75rem;
@@ -180,6 +184,7 @@ div.gallery {
 div.gallery figure {
     margin: .5rem 2% 0 0;
 }
+
 div.gallery figcaption {
     text-align: center;
     font-size: .8rem;
