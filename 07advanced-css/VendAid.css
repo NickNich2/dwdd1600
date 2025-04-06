@@ -89,6 +89,13 @@ header h1 {
         background-color: #1abc9c;
     }
 
+    nav .active a {
+        background-color: #1a2fcc;
+        background-image: linear-gradient(to bottom, #403aec, );
+        color: white;
+    }
+
+
 }
 
 /*end of the media query*/
@@ -287,6 +294,11 @@ div.gallery figcaption {
     font-size: .8rem;
     color: #303ed3
 }
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(9, 9, 121, 1)
+}
+
 
 /* footer stuff */
 footer {
