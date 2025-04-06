@@ -91,7 +91,7 @@ header h1 {
 
     nav .active a {
         background-color: #1a2fcc;
-        background-image: linear-gradient(to bottom, #403aec, );
+        background-image: linear-gradient(to bottom, #332fb8,#3c2faf);
         color: white;
     }
 
