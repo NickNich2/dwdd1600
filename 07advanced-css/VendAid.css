@@ -1,5 +1,7 @@
 /* prevent problems with different browsers*/
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Libre Baskerville';
@@ -34,69 +36,69 @@ header h1 {
 /* small screens*/
 @media only screen and (max-width: 800px) {
 
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    /* Aligns items horizontally with space between them */
-    align-items: center;
-    /* Vertically centers the items */
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        /* Aligns items horizontally with space between them */
+        align-items: center;
+        /* Vertically centers the items */
+
+    }
+
+    .item {
+        background-color: lightblue;
+        /* Just for visual clarity */
+        padding: 20px;
+        margin: 10px;
+    }
+
+    nav {
+        background-color: #557799;
+        display: block;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: block;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 48px;
+        margin: 0 0 auto;
+        text-transform: capitalize;
+        display: block;
+        padding: .8rem;
+        text-align: center;
+        border-bottom: solid 1px #34495e;
+    }
+
+    nav li.active a {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        color: #eee5e5;
+    }
+
+    nav li a:hover {
+        background-color: #1abc9c;
+    }
 
 }
 
-.item {
-    background-color: lightblue;
-    /* Just for visual clarity */
-    padding: 20px;
-    margin: 10px;
-}
-
-nav {
-    background-color: #557799;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 48px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0 48px;
-    margin: 0;
-    display: flex;
-}
-
-nav li {
-    float: left;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    line-height: 48px;
-    margin: 0 15px;
-    text-transform: capitalize;
-    display: flex;
-    padding: 10px 20px;
-}
-
-nav li.active a {
-    background-color: #024873;
-    color: #eee5e5;
-}
-
-nav li a:hover {
-    background-color: #1abc9c;
-}
-
-} /*end of the media query*/
+/*end of the media query*/
 
 
 @media only screen and (min-width: 801px) {
 
     nav {
         border-top: solid 1px #E0E6E6;
-        
+
     }
 
     .flex-container {
@@ -105,16 +107,16 @@ nav li a:hover {
         /* Aligns items horizontally with space between them */
         align-items: center;
         /* Vertically centers the items */
-    
+
     }
-    
+
     .item {
         background-color: lightblue;
         /* Just for visual clarity */
         padding: 20px;
         margin: 10px;
     }
-    
+
     nav {
         background-color: #557799;
         display: flex;
@@ -122,18 +124,18 @@ nav li a:hover {
         justify-content: center;
         padding: 48px;
     }
-    
+
     nav ul {
         list-style-type: none;
         padding: 0 48px;
         margin: 0;
         display: flex;
     }
-    
+
     nav li {
         float: left;
     }
-    
+
     nav a {
         color: #fff;
         text-decoration: none;
@@ -146,18 +148,20 @@ nav li a:hover {
         text-align: center;
         border-bottom: solid 2px #fff;
     }
-    
+
     nav li.active a {
         background-color: #024873;
         color: #eee5e5;
     }
-    
+
     nav li a:hover {
         background-color: #1abc9c;
     }
-    
-    } /*end of the media query*/
-    
+
+}
+
+/*end of the media query*/
+
 
 
 
@@ -260,9 +264,11 @@ figure.wrapped figcaption {
     width: 100%;
     margin: 0;
 }
+
 .VendAidhero img {
     width: 100%;
     height: auto;
+    box-shadow: 6px 6px 10px black;
 }
 
 
@@ -290,11 +296,15 @@ footer {
     padding: 20px;
     clear: both;
 }
+
 footer a {
     color: #430d99;
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
     max-width: 64rem;
     margin: 0 auto;
 }
