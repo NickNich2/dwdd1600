@@ -1,0 +1,369 @@
+/* prevent problems with different browsers*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* head stuff here*/
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 48px;
+    text-align: center;
+}
+
+header span {
+    font-size: large;
+    font-weight: 700;
+}
+
+header h1 {
+    margin: 0;
+    color: #dadfe3;
+    font-size: 2rem;
+}
+
+/* navigation stuff*/
+
+/* small screens*/
+@media only screen and (max-width: 800px) {
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        /* Aligns items horizontally with space between them */
+        align-items: center;
+        /* Vertically centers the items */
+
+    }
+
+    .item {
+        background-color: lightblue;
+        /* Just for visual clarity */
+        padding: 20px;
+        margin: 10px;
+    }
+
+    nav {
+        background-color: #557799;
+        display: block;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: block;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 48px;
+        margin: 0 0 auto;
+        text-transform: capitalize;
+        display: block;
+        padding: .8rem;
+        text-align: center;
+        border-bottom: solid 1px #34495e;
+    }
+
+    nav li.active a {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        color: #eee5e5;
+    }
+
+    nav li a:hover {
+        background-color: #1abc9c;
+    }
+
+    nav .active a {
+        background-color: #1a2fcc;
+        background-image: linear-gradient(to bottom, #332fb8,#3c2faf);
+        color: white;
+    }
+
+
+}
+
+/*end of the media query*/
+
+
+@media only screen and (min-width: 801px) {
+
+    nav {
+        border-top: solid 1px #E0E6E6;
+
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        /* Aligns items horizontally with space between them */
+        align-items: center;
+        /* Vertically centers the items */
+
+    }
+
+    .item {
+        background-color: lightblue;
+        /* Just for visual clarity */
+        padding: 20px;
+        margin: 10px;
+    }
+
+    nav {
+        background-color: #557799;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 48px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0 48px;
+        margin: 0;
+        display: flex;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 48px;
+        margin: 0 15px;
+        display: flex;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px #fff;
+    }
+
+    nav li.active a {
+        background-color: #024873;
+        color: #eee5e5;
+    }
+
+    nav li a:hover {
+        background-color: #1abc9c;
+    }
+
+}
+
+/*end of the media query*/
+
+
+
+
+/* main stuff*/
+
+a:active {
+    color: rgb(240, 240, 245);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(163, 163, 197);
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+main ul li {
+    line-height: 125%;
+    margin: .5rem;
+    font-size: .9rem;
+}
+
+main h2 {
+    color: #05334f;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+p {
+    line-height: 48px;
+}
+
+section {
+    padding: 40px;
+    margin: 20px 0;
+}
+
+ol {
+    display: table-column;
+    list-style-type: decimal;
+    /* Keeps the numbered list */
+    padding: 0;
+    margin: 0;
+}
+
+ol li {
+    margin-right: 20px;
+    /* Adds space between items */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+dl1 {
+    background-color: #1c0f57;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.VendAidhero {
+    width: 100%;
+    margin: 0;
+}
+
+.VendAidhero img {
+    width: 100%;
+    height: auto;
+    box-shadow: 6px 6px 10px black;
+}
+
+
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #303ed3
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(9, 9, 121, 1)
+}
+
+
+/* footer stuff */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+footer a {
+    color: #430d99;
+}
+
+
+.myForm fieldset {
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+
+.myForm legend {
+    color: #43a0b6; 
+    font-size: .9rem;
+}
+.myForm label {
+    margin: .8rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], [type=email], .myForm textarea {
+    display: block;
+}
+
+
+.myForm [type=text], .myForm [type=tel], .myForm select, [type=email], .myForm textarea .myForm  {
+    border: solid 3px #1e1c1c;
+    padding: .2rem;
+    width: 300x;
+    border-radius: 1rem;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 400;
+}
+
+.myForm textarea {
+    height: 4rem;
+    }
+
+    .myForm :required {
+        background-color: rgba(23, 123, 173, 0.1);
+    }
+
+ 
+.myForm [type=submit] {
+background-color: #5e37df;
+border: ridge;
+padding: 2rem 3rem;
+border-radius: 25px;
+color: rgb(234, 218, 218);
+margin: 1rem 0 0 1vw;
+}
+
+
+
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}

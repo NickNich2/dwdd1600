@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" Content="Nicholas Nicholes">
+    <meta name="description" content="welcome to VendAid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="VendAid.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Vendaid LLC</title>
+</head>
+
+<body>
+
+    <!--start of Head page -->
+
+    <header>
+        <img src="images/icon.png" alt="site logo" width="100" height="58">
+        <span><em>VendAid</em></span>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome to VendAid</a></li>
+            <li><a href="Aboutus.html">History and Mission</a></li>
+            <li class="active"><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+     <Main>
+        <h1>Service Inquiry</h1>
+        <Form method="get" class="myForm" action="thanks.html">
+
+
+            <form action="https://your-server-endpoint.com/submit" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+          
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+          
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+          
+                <label for="service">Service Type</label>
+                <select id="service" name="service" required>
+                  <option value="">-- choose an option --</option>
+                  <option value="business ventures">Business ventures</option>
+                  <option value="product info">Product info</option>
+                  <option value="parnter service">Partner services</option>
+                  <option value="cleaning and restock">Cleaning and Restock</option>
+                  <option value="other">Other</option>
+                </select>
+          
+                <p>Prefered Method of Contact.</p>
+
+
+            <label><input type="radio" name="device" value="phone">Phone</label>
+            <label><input type="radio" name="device" value="email">Email</label>
+            <label><input type="radio" name="device" value="SMS">SMS</label>
+
+
+                <label for="message">Additional Details</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe the issue or request in detail..."></textarea>
+          
+                <input type="submit" value="Submit Request">
+              </form>
+
+
+
+
+     </Main>
+   
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 VendAid LLC &bull; All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
