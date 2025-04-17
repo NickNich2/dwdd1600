@@ -31,6 +31,14 @@ header h1 {
     font-size: 2rem;
 }
 
+
+header h2 {
+    margin: 0;
+    color: #dadfe3;
+    font-size: 2rem;
+    padding: 0;
+}
+
 /* navigation stuff*/
 
 /* small screens*/
@@ -91,7 +99,7 @@ header h1 {
 
     nav .active a {
         background-color: #1a2fcc;
-        background-image: linear-gradient(to bottom, #332fb8,#3c2faf);
+        background-image: linear-gradient(to bottom, #332fb8, #3c2faf);
         color: white;
     }
 
@@ -299,6 +307,64 @@ div.gallery img:hover {
     box-shadow: 0px 0px 10px rgba(9, 9, 121, 1)
 }
 
+.myForm fieldset {
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+
+.myForm legend {
+    color: #43a0b6;
+    font-size: .9rem;
+}
+
+.myForm label {
+    margin: .8rem;
+    color: rgb(30, 30, 222);
+}
+
+.myForm label,
+.myForm select,
+.myForm [type=text],
+.myForm [type=tel],
+[type=email],
+.myForm textarea {
+    display: block;
+}
+
+
+.myForm [type=text],
+.myForm [type=tel],
+.myForm select,
+[type=email],
+.myForm textarea .myForm {
+    border: solid 3px #1e1c1c;
+    padding: .2rem;
+    width: 300px;
+    border-radius: 1rem;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.myForm textarea {
+    height: 4rem;
+}
+
+.myForm :required {
+    background-color: rgba(23, 123, 173, 0.1);
+}
+
+
+.myForm [type=submit] {
+    background-color: #5e37df;
+    border: ridge;
+    padding: 2rem 3rem;
+    border-radius: 25px;
+    color: rgb(234, 218, 218);
+    margin: 2rem 0 0 2vw;
+}
 
 /* footer stuff */
 footer {
@@ -313,56 +379,9 @@ footer a {
     color: #430d99;
 }
 
-
-.myForm fieldset {
-    border: 1px solid #43a0b6;
-    border-radius: 3px;
-    margin-bottom: 1rem;
-}
-
-
-.myForm legend {
-    color: #43a0b6; 
-    font-size: .9rem;
-}
-.myForm label {
-    margin: .8rem;
-}
-
-.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], [type=email], .myForm textarea {
-    display: block;
-}
-
-
-.myForm [type=text], .myForm [type=tel], .myForm select, [type=email], .myForm textarea .myForm  {
-    border: solid 3px #1e1c1c;
-    padding: .2rem;
-    width: 300x;
-    border-radius: 1rem;
-    font-family: 'Libre Baskerville', sans-serif;
-    font-weight: 400;
-}
-
-.myForm textarea {
-    height: 4rem;
-    }
-
-    .myForm :required {
-        background-color: rgba(23, 123, 173, 0.1);
-    }
-
- 
-.myForm [type=submit] {
-background-color: #5e37df;
-border: ridge;
-padding: 2rem 3rem;
-border-radius: 25px;
-color: rgb(234, 218, 218);
-margin: 1rem 0 0 1vw;
-}
-
-
-
+header,
+nav,
+main,
 footer {
     max-width: 64rem;
     margin: 0 auto;

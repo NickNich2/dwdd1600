@@ -37,50 +37,57 @@
     </nav>
 
     <!-- Main Section -->
-     <Main>
+    <Main>
         <h1>Service Inquiry</h1>
         <Form method="get" class="myForm" action="thanks.html">
 
 
-            <form action="https://your-server-endpoint.com/submit" method="POST">
+            <fieldset>
+                <legend>Inquires Information</legend>
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>
-          
+
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required>
-          
+
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required>
-          
+            </fieldset>
+
+            <fieldset>
+                <legend>Inquiry type</legend>
                 <label for="service">Service Type</label>
                 <select id="service" name="service" required>
-                  <option value="">-- choose an option --</option>
-                  <option value="business ventures">Business ventures</option>
-                  <option value="product info">Product info</option>
-                  <option value="parnter service">Partner services</option>
-                  <option value="cleaning and restock">Cleaning and Restock</option>
-                  <option value="other">Other</option>
+                    <option value="">-- choose an option --</option>
+                    <option value="business ventures">Business ventures</option>
+                    <option value="product info">Product info</option>
+                    <option value="parnter service">Partner services</option>
+                    <option value="cleaning and restock">Cleaning and Restock</option>
+                    <option value="other">Other</option>
                 </select>
-          
-                <p>Prefered Method of Contact.</p>
+            </fieldset>
 
+            <p>Prefered Method of Contact.</p>
 
-            <label><input type="radio" name="device" value="phone">Phone</label>
-            <label><input type="radio" name="device" value="email">Email</label>
-            <label><input type="radio" name="device" value="SMS">SMS</label>
+            <fieldset>
+                <legend>Method of Contact</legend>
+                <label><input type="radio" name="device" value="phone">Phone</label>
+                <label><input type="radio" name="device" value="email">Email</label>
+                <label><input type="radio" name="device" value="SMS">SMS</label>
 
 
                 <label for="message">Additional Details</label>
-                <textarea id="message" name="message" rows="5" placeholder="Describe the issue or request in detail..."></textarea>
-          
+                <textarea id="message" name="message" rows="5"
+                    placeholder="Describe the issue or request in detail..."></textarea>
+
                 <input type="submit" value="Submit Request">
-              </form>
+            </fieldset>
 
 
 
 
-     </Main>
-   
+    </Main>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 VendAid LLC &bull; All Rights Reserved.</p>
