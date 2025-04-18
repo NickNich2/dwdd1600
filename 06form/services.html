@@ -40,23 +40,16 @@
     <h1>Service Inquiry</h1>
     <Form method="get" class="myForm" action="thanks.html">
 
-
         <fieldset>
             <legend>Inquires Information</legend>
-            <label for="name">Full Name</label>
-            <label><input type="text" id="name" name="name" required></label>
-
-            <label for="email">Email Address</label>
-            <label><input type="email" id="email" name="email" required></label>
-
-            <label for="phone">Phone Number</label>
-            <label><input type="tel" id="phone" name="phone" required></label>
+            <label>Full Name*<input type="text" name="name" required></label>
+            <label>Email Address*<input type="email" id="email" name="email" required></label>
+            <label>Phone Number*<input type="tel" name="phone" required></label>
         </fieldset>
 
         <fieldset>
-            <legend>Inquiry type</legend>
-            <label for="service">Service Type
-                <select id="service" name="service" required>
+            <label>Inquiry type
+                <select name="inquiry" required>
                     <option value="">-- choose an option --</option>
                     <option value="business ventures">Business ventures</option>
                     <option value="product info">Product info</option>
@@ -67,29 +60,30 @@
             </label>
         </fieldset>
 
-        <p>Prefered Method of Contact.</p>
 
         <fieldset>
             <legend>Method of Contact</legend>
             <label><input type="radio" name="device" value="phone">Phone</label>
             <label><input type="radio" name="device" value="email">Email</label>
             <label><input type="radio" name="device" value="SMS">SMS</label>
-
-
-            <label for="message">Additional Details</label>
-            <label><textarea id="message" name="message" rows="5"
-                placeholder="Describe the issue or request in detail..."></textarea></label>
         </fieldset>
+
 
         <fieldset>
             <legend>Are you satisfied with your experience?</legend>
             <label><input type="checkbox" name="yes" value="chosen"> Yes</label>
             <label><input type="checkbox" name="somewhat" value="chosen"> Somewhat</label>
-            <checkbox id="check"/><label></label><input type="checkbox" name="no" value="chosen"> No</label>
+            <label><input type="checkbox" name="no" value="chosen"> No</label>
         </fieldset>
 
-       <label><input type="submit" value="Submit Request"></label>
+        <label> Additional Details
+            <textarea placeholder="Describe the issue or request in detail..."></textarea>
+        </label>
+
+
+        <input type="submit" value="Submit Request">
     </Form>
+
 </Main>
 
 <!-- Footer -->
